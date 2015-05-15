@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextInventory xmlns="http://chs.harvard.edu/xmlns/cts" tiversion="5.0.rc.2">
+  <!-- This is a TextInventory for all confirmed CTS-compliant texts in CroALa -->
+  <!-- Model: Perseus allcts.xml, 01.01.2015 -->
+  <!--commented-out texts are not yet CTS compliant, but the citation structures are accurate -->
+  <collection id="CroALa" isdefault="yes">
+	<title xml:lang="lat">Croatiae auctores Latini - bibliotheca electronica</title>
+    <title xml:lang="eng">Digitalna biblioteka hrvatskih latinista</title>
+    <title xml:lang="eng">A Digital Collection of Croatian Authors Writing in Latin</title>
+    <creator xmlns="http://purl.org/dc/elements/1.1/">Croatica et Tyrolensia</creator>
+    <coverage xmlns="http://purl.org/dc/elements/1.1/" xml:lang="hrv">Primarni i sekundarni izvori za istraživanje hrvatskog latinizma</coverage>
+    <description xmlns="http://purl.org/dc/elements/1.1/" xml:lang="hrv">Primarni i sekundarni izvori za istraživanje hrvatskog latinizma</description>
+    <coverage xmlns="http://purl.org/dc/elements/1.1/" xml:lang="lat">Fontes primarii et secundarii Latinitati Croaticae investigandae</coverage>
+    <description xmlns="http://purl.org/dc/elements/1.1/" xml:lang="lat">Fontes primarii et secundarii Latinitati Croaticae investigandae</description>
+    <coverage xmlns="http://purl.org/dc/elements/1.1/" xml:lang="eng">Primary and secondary sources
+      for the study of Croatian Latin</coverage>
+    <description xmlns="http://purl.org/dc/elements/1.1/" xml:lang="eng">Primary and secondary
+      sources for the study of Croatian Latin</description>
+    <rights xmlns="http://purl.org/dc/elements/1.1/" xml:lang="hrv">Prava: Creative Commons licenca - imenovanje 4.0 međunarodna</rights>
+    <rights xmlns="http://purl.org/dc/elements/1.1/" xml:lang="eng">This work is licensed under a Creative Commons Attribution 4.0 International License.</rights>
+  </collection>
+  
+  
+  <ctsnamespace abbr="croala" ns="http://croala.ffzg.unizg.hr/cts">
+    <description xml:lang="eng">Texts from Croatiae auctores Latini
+      http://croala.ffzg.unizg.hr/intro/</description>
+  </ctsnamespace>
+  
+  <!-- popis tekstova, prvo pisma -->
+  <textgroup projid="croala:calcrije02">
+    <groupname xml:lang="hrv">Crijević, Ilija</groupname>
+    <work projid="croala:crijev-i-epist-1504" xml:lang="lat">
+      <title xml:lang="lat">Epistula ad Marinum Bonum (1504/1512)</title>
+      <title xml:lang="hrv">Pismo Marinu Buniću (1504/1512)</title>
+      <edition projid="croala:croala-lat1">
+        <label xml:lang="lat">Epistula ad Marinum Bonum (1504/1512), versio electronica, (Zagreb 2012 TEI XML)</label>
+        <description xml:lang="lat">Epistula ad Marinum Bonum (1504/1512), versio electronica. Zagreb, Digitalizacija hrvatskih latinista, lipnja 2012.</description>
+        <online docname="calcrije02.crijev-i-epist-1504.croala-lat1.xml">
+          <validate schema="tei_all.xsd"/>
+          <namespaceMapping abbreviation="tei" nsURI="http://www.tei-c.org/ns/1.0"/>
+          <citationMapping>
+            <citation label="Epistula" xpath="/tei:div[@xml:id='?']" scope="/tei:TEI/tei:text/tei:body">
+              <citation label="Sectio" xpath="/tei:div[@n='?']" scope="/tei:TEI/tei:text/tei:body/tei:div[@xml:id='?']">
+              </citation>
+            </citation>
+          </citationMapping>
+        </online>
+      </edition>
+    </work>
+  </textgroup>
+  
+  </TextInventory>
